@@ -26,8 +26,12 @@ stlAttractions.animals.bugs = "The Botanical Garden";
 
 // console.log(stlAttractions.animals.bugs);
 
-const faveAttraction = `My favorite STL attraction is ${(stlAttractions.animals.bears = [
-  "The St Louis Zoo's Bear Exhibit"
-])}!`;
+// const faveAttraction = `My favorite STL attraction is ${(stlAttractions.animals.bears = [
+//   "The St Louis Zoo's Bear Exhibit"
+// ])}!`; //Previous homework code
+
+const faveAttraction = `My favorite STL attraction is ${(stlAttractions[
+  "animals"
+]["bears"] = "The St Louis Zoo's Bear Exhibit")}`; //<=suggested homework code (cleaner cod)
 
 console.log(faveAttraction);
